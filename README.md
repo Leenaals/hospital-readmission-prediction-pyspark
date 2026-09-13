@@ -56,7 +56,9 @@ The original report and initial models achieved high accuracy but a low AUC (Dec
 
 ```
 ├── Final_Phase_Hospital_Readmission.ipynb   # Full analysis: EDA, preprocessing, modeling, evaluation
-├── Final_phase_Big_data.pdf                 # Written report / paper
+├── Final phase Big data.pdf                 # Written report / paper
+├── hospital_readmissions_30k.csv            # Dataset
+├── requirements.txt
 └── README.md
 ```
 
@@ -64,10 +66,14 @@ The original report and initial models achieved high accuracy but a low AUC (Dec
 
 1. Install dependencies:
    ```bash
-   pip install pyspark pandas matplotlib seaborn
+   pip install -r requirements.txt
    ```
-2. Place the dataset (`hospital_readmissions_30k.csv`) in the project root.
+2. Make sure `hospital_readmissions_30k.csv` is in the project root (already included in this repo).
 3. Open and run `Final_Phase_Hospital_Readmission.ipynb` top to bottom (Jupyter or Google Colab).
+
+## About This Project
+
+This is a **group project for the Big Data course**, part of a Data Science and Analytics program, addressing the scalability gap in existing hospital-readmission research by applying a distributed (PySpark) framework to a large-scale dataset.
 
 ## Future Work
 
